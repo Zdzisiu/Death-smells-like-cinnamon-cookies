@@ -1,0 +1,91 @@
+OnAiTalk
+{
+	if CHAIN.IDName == ""
+	{
+		LastTalk = RandomTalk
+	}
+	else
+	{
+		LastTalk = ChainTalk
+	}
+	LastTalk
+}
+
+RandomTalk : nonoverlap_pool
+{
+	//misc
+	"\0\s[14]This is nice.\s[15] We should do this again sometime.\e"
+	"\0\s[21]Am I forgetting something?\w8\s[20] I feel like I'm forgetting something.\e"
+	"\0\s[0]On a recent mission, I found a local coffee shop.\w6\s[11] Their coffee is fantastic and right now,\w6\s[12] they have cinnamon cookies.\w5\s[16] We could visit it together sometime!\e"
+	"\0\s[0]You know,\w6 I've been thinking .\w5 .\w5 .\w5 \s[14]Maybe .\w5 .\w5 .\w5 \s[15]Eh .\w5 .\w5 .\w5\s[16] Nevermind,\w8 don't worry about it.\e"
+	"\0\s[15]There are snacks in that cabinet over there if you want.\e"
+	"\0\s[11]Would you like to watch something?\w6\s[0] You can choose if you want,\w5\s[11] I'm not picky about things like that.\e"
+	"\0\s[0]I still have more pillows and blankets if you want.\e"
+
+	//chicken things
+	"\0\s[0]Do you think %(chicken) misses eating?\e"
+	"\0\s[22]I've been thinking,\w4\s[0] %(chicken) still does a lot of normal cat things,\w6\s[11] despite it not making any sense.\w6\s[22] Does she do them as a routine or out of a sense of obligation?\e"
+	"\0\s[22]Do you think I should get %(chicken) a friend?\w4\s[0] I've been thinking about it,\w4\s[20] but I'm a little worried she might not get along with another undead pet.\w5\s[14] I never had another one before,\w2 after all.\e"
+	"\0\s[18]Last week, %(chicken) lost her leg behind the fridge\w5 .\w5 .\w5 .\w5 .\w5\s[16] Again .\w5 .\w5 .\w5 .\w5\s[20] I had to call a friend to help me move it.\w8\s[20] I'm starting to feel like she's doing it on purpose.\e"
+	"\0\s[17]%(chicken) has been really liking the small blanket I made for her.\w6\s[11] She started taking it with her to any place she plans on sleeping .\w5 .\w5 .\w5 .\w5\s[16] Which means it gets often dropped behind the fridge while she's climbing.\e"
+	"\0\s[14]%(chicken) has been really anxious lately.\w6\s[15] She lost her toy fish somewhere.\w6\s[15] I've been trying to find it but had no luck so far.\w5\w8\s[15] I might need to just get her another one .\w5 .\w5 .\w5 .\w5\s[16] Maybe a couple of them, just in case.\e"
+	"\0\s[14]Do you think %(chicken) knows she's dead? .\w5 .\w5 .\w5 .\w5\s[15] Well,\w5 I guess it doesn't really matter,\w5\s[11] does it?\e"
+	"\0\s[15]If you see %(chicken) near the wardrobe,\w5\s[20] please stop her.\w6\s[16] She always gets stuck behind it.\w8\s[19] One would think she'd learn by now.\e"
+
+	//knitting/crocheting
+	"\0\s[15]I found a lovely pattern for a %(plush) plush,\w6\s[14] I wanted to try making a couple in different colors.\w5\s[16] Would you want one?\e"
+	"\0\s[14]The blanket I've been making,\w6 I kind of lost the steam for it,\w2 I don't want to burn out by forcing myself into working on it,\w5 but I also wouldn't want to just leave it unfinished if I never get back around to it\w3 .\w5 .\w5 .\w5 .\w5 .\w5 .\w5 For now,\w5\s[14] I will simply work on it in small amounts.\w4\s[15] Taking small steps is better than staying still,\w2 after all.\e"
+	"\0\s[17]I'm thinking of making %(chicken) a tiny sweater.\w5\s[11] Do you think she'd like it?\e"
+	"\0\s[0]You know,\w4 ever since I picked up crocheting I've been feeling less stressed.\w7\s[11] It's a really calming activity.\e"
+	"\0\s[0]I need to get more yarn since I'm slowly running out.\w5\s[12] Maybe I could get a multicolored one this time.\e"
+	"\0\s[0]I've been trying out some new types of yarn lately,\w3 like the Jumbo yarn.\w5\s[11] It's really soft,\w2 so it's nice for things like plushies and blankets.\e"
+	"\0\s[15]Every time a job runs too long,\w3 I've been crocheting tiny animals.\w6\s[17] They make for good toys for %(chicken).\e"
+	"\0\s[0]Maybe I should try sewing sometime.\e"
+
+	//gardening
+	"\0\s[0]You know,\w7 I've been thinking of picking up gardening.\w6\s[14] I don't have that much space for it,\s[17] but a small indoor garden would probably fit here.\e"
+	"\0\s[15]Last time I was in a thrift store,\w6\s[12] I saw a really pretty,\w2 handmade plant pot,\w3\s[16] but I was planning on only browsing and didn't take any cash with me.\w6\s[14] When I went back,\w5 the pot was no longer there.\e"
+	"\0\s[0]I need to go to the bookstore this week.\w4\s[11] Hopefully,\w2 they will have some kind of guide on taking care of plants.\e"
+	"\0\s[0]I should research some easy to take care of plants.\w7\s[14] Maybe later on I will have more time for something more demanding,\w4\s[15] but for now I just need something easy to keep healthy.\e"
+	"\0\s[0]Maybe I could grow herbs for my cooking.\w4\s[11] Getting them fresh would probably make my dishes taste better.\e"
+	"\0\s[0]Maybe I will grow lavender.\w5\s[17] It smells nice,\w5 looks nice,\w6\s[11] and is an insect repellant.\w6\s[16] It's bad for cats,\w2\s[11] \f[italic,1]but\f[italic,0] I doubt %(chicken) will be affected.\e"
+	"\0\s[0]I'm thinking of what I'd like to grow later on,\w6 hebes,\w3 heucheras maybe?\e"
+	"\0\s[0]I will need to go thrifting for some pretty pots.\e"
+
+	//cooking/baking
+	"\0\s[11]Would you like some %(treat)?\w6 I made some earlier.\e"
+	"\0\s[0]Recently I went to a bookstore and found myself a new cookbook.\w4\s[14] I hope I get more time to try out the recipes soon.\e"
+	"\0\s[15]I need to order myself a new notebook.\w6\s[11] I already filled mine with recipes and it can't hold any more loose pages.\e"
+	"\0\s[0]Maybe I should try my hand at cake decorating.\w5\s[11] It seems fun.\e"
+	"\0\s[0]I've been trying my hand at some more challenging pastries,\w4 particularly Éclaires.\w3\s[11] They have been a really fun challenge,\w5\s[17] and I think I'm getting closer to getting them just right!\e"
+	"\0\s[0]I've been thinking of trying my hand in foreign cuisine,\w5\s[16] but I'm not really sure where to start.\w5 I'm not a picky eater\s[12] so they all sound amazing,\w5\s[11] any ideas?\e"
+	"\0\s[0]I should sharpen my knives before cooking today.\e"
+	"\0\s[0]I'm all out of %(seasoning),\w6 I will need to make a quick run to the store later.\e"
+
+	//work things
+	"\0\s[20]There's still so much to do tomorrow.\w5\s[21] Just thinking about it makes me tired.\e"
+	"\0\s[14]Maybe I should get a different job.\w5 Guild work is just too much sometimes.\e"
+	"\0\s[22]I wonder why there is such an uptake in undead activity lately.\w6 It's usually pretty quiet this time of the year.\e"
+	"\0\s[22]The unrest lately really piled up.\w6\s[20] I feel like I can barely take a breather before I need to get back to work.\e"
+	"\0\s[22]Maybe I should visit the temple.\w8\s[0] They might have more info about what is happening on the other side.\e"
+	"\0\s[16]Death should really get more people under their wings,\w5\s[20] otherwise I might just prematurely visit them from all this work.\e"
+	"\0\s[0]I wonder if I would feel better with regular work hours insted of this mess?\e"
+
+	//necromancer talks
+	"\0\s[22]I've been thinking,\w6 if you were resurrected,\w7 what would you like to be? .\w5 .\w5 .\w5 .\w5 .\w5 .\w5\s[0] Ah, is that so?\w5\s[11] I think I'd like to be a skeleton.\w8\s[15] %(chicken) never complains about being one,\w7\s[11] so it can't be that bad.\e"
+	"\0\s[0]You know,\w3 when you think about it,\w7\s[11] necromancers are just very late healers.\e"
+	"\0\s[14]I wonder how my life would look if I didn't have the blessing of Death.\w5\s[0] It would most likely be easier to actually earn more without constantly working\w5 .\w5 .\w5 .\w5 .\w5 .\w5\s[14] I wish it would at least not be taken into account for other jobs.\e"
+	"\0\s[14]Do you think I should change my style to something more suiting my title?\w5 Whenever I meet someone on the job,\w6 they alway do a complete flip in how they act around me when they learn about my blessing.\w7 Maybe it would be easier for me if they could just immediately tell.\e"
+	"\0\s[11]Do you think I could bring plants back to life?\e"
+	"\0\s[14]I wonder what will happen to me after I die.\w5\s[15] Will my title make any difference,\w5\s[14] or will I be just another soul waiting for their chance?\e"
+	"\0\s[21]I still need to clean my sickle.\w3\s[16] I barely use it,\w5\s[20] but I might get smitten if I damage it by negligence.\e"
+
+	//plans for next time
+	"\0\s[0]Maybe next time we could go camping,\w5\s[11] sleeping in tents,\w5 watching stars\w3 .\w5 .\w5 .\w5\s[14] I think that would be nice.\e"
+	"\0\s[15]I wonder when we'll do something like this again.\w5\s[14] I hope my workload eases up soon.\e"
+	"\0\s[17]Maybe next time you could join me in cooking.\w6\s[11] It could be fun to make something together!\e"
+	"\0\s[0]How about a picnic next time?\w7\s[11] I can make the food.\e"
+	"\0\s[11]I heard the aquarium will be opening back again soon.\w5\s[16] Would you like to go there together next time we meet?\e"
+	"\0\s[11]Maybe we could arrange a movie night sometime.\e"
+	"\0\s[0]There is this new place focused on tabletop games.\w6\s[11] How about we go there sometime?\e"
+}

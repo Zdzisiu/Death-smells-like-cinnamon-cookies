@@ -1,0 +1,17 @@
+charset,UTF-8
+
+name,Death smells like cinnamon cookies
+type,ghost
+
+shiori,yaya.dll
+
+craftman,Zdzisiu
+craftmanw,Zdzisiu
+craftmanurl,
+
+sakura.name,Liam
+kero.name,Chicken
+
+icon,icon.ico
+
+sstp.allowunspecifiedsend,0

@@ -1,0 +1,1 @@
+Image of the cat skeleton and heart diagram are from works in the public domain.

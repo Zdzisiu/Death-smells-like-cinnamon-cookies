@@ -1,0 +1,5 @@
+charset,UTF-8
+type,ghost
+
+name,Death smells like cinnamon cookies
+directory,dslcc
